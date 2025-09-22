@@ -38,22 +38,11 @@ Set these environment variables:
 - `BIGQUERY_DATASET_ID`: BigQuery dataset name
 - `BIGQUERY_TABLE_ID`: BigQuery table name
 
-## Schema
 
-The server expects a table with these fields:
-- `name`, `group`, `version`, `release`, `assembly` (STRING)
-- `el_target`, `arches`, `installed_packages` (STRING) 
-- `parent_images`, `source_repo`, `commitish` (STRING)
-- `rebase_repo_url`, `rebase_commitish` (STRING)
-- `embargoed`, `rmetic` (BOOLEAN)
-- `start_time`, `end_time`, `ingestion_time` (TIMESTAMP)
-- `artifact_type`, `engine`, `image_pullspec` (STRING)
-- `image_tag`, `outcome`, `art_job_url` (STRING)
-- `build_pipeline_url`, `pipeline_commit` (STRING)
-- `schema_level`, `build_priority` (INTEGER)
-- `record_id`, `build_id`, `nvr` (STRING)
-- `installed_rpms`, `build_component` (STRING)
 
 ## Usage with Claude/Gemini
 
-Configure the MCP server in your AI tool's settings to enable BigQuery data access for analysis and reporting.
+To make it work with Claude Code:
+```
+claude mcp add "bigquery-art" "python" "/Users/asdas/JetBrains/PycharmProjects/art-mcp/tools/bigquery_mcp_server.py"
+```
