@@ -1,6 +1,6 @@
 # ART MCP Server
 
-Model Context Protocol (MCP) server for querying BigQuery tables containing ART (Atomic Red Team) build data.
+Model Context Protocol (MCP) server for querying BigQuery tables containing ART (Automated Release Tooling) Team build data.
 
 ## Features
 
