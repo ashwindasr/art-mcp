@@ -2,7 +2,7 @@
 """
 BigQuery MCP Server for ART Data
 
-This MCP server provides tools for querying BigQuery tables containing ART (Atomic Red Team) build data.
+This MCP server provides tools for querying BigQuery tables containing ART build data.
 It allows AI assistants to retrieve and analyze build information, package data, and pipeline metrics.
 """
 
